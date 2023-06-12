@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Client</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> <!--Jquery insertado-->
+    <script src='./js/clientFunctions.js'></script>    <!--Invocar funcion Javascript-->  
+</head>
+<body>
+    <a href="./index.html">Index</a>                    <!-- Llamado de pagina principal index-->
+    <h1>Clientes</h1>
+
+    <div id="Registro">
+        <input type="number" id="id" placeholder="ID">                      <!--Crea campo numerico con titulo-->
+        <input type="text"   id="name" placeholder="NAME">                <!--Crea campo de texto con titulo-->
+        <input type="text"   id="email" placeholder="EMAIL">                <!--Crea campo numerico con titulo-->
+        <input type="number" id="age" placeholder="AGE">                  <!--Crea campo numerico con titulo-->
+    </div>
+
+    <div id="Botones">
+        <br>
+        <button onclick="addClient()">Registrar!</button>    <!--Crea boton que llama metodo "addCar"-->
+        <button onclick="listClient()">Listar!</button>      <!--Crea boton que llama metodo "ListCar"-->
+        <button onclick="updClient()">Modificar!</button>    <!--Crea boton que llama metodo "UpdCar"-->
+        <br>
+    </div>
+
+    <div id="resultadoClient"></div>  <!-- Espacios de resultados / div es un contenedor-->
+
+</body>
+</html>

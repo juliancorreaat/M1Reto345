@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cars</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> <!--Jquery insertado-->
+    <script src='./js/gamaFunctions.js'></script>    <!--Invocar funcion Javascript-->  
+</head>
+<body>
+    <a href="./index.html">Index</a>                    <!-- Llamado de pagina principal index-->
+    <h1>Administración Cars</h1>
+    
+    <div id="Registro">
+        <input type="number" id="id" placeholder="ID">                      <!--Crea campo numerico con titulo-->
+        <input type="text"   id="brand" placeholder="BRAND">                <!--Crea campo de texto con titulo-->
+        <input type="number" id="model" placeholder="MODEL">                <!--Crea campo numerico con titulo-->
+        <input type="number" id="category_id" placeholder="CATEGORY_ID">    <!--Crea campo numerico con titulo-->
+    </div>
+
+    <div id="Botones">
+        <br>
+        <button onclick="addCar()">Adicionar!</button>    <!--Crea boton que llama metodo "addCar"-->
+        <button onclick="listCar()">Listar!</button>      <!--Crea boton que llama metodo "ListCar"-->
+        <button onclick="updCar()">Modificar!</button>    <!--Crea boton que llama metodo "UpdCar"-->
+    </div>
+
+    <div id="resultado"></div>  <!-- Espacios de resultados / div es un contenedor-->
+
+</body>
+</html>
